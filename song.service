@@ -1,0 +1,13 @@
+[Unit]
+
+Description=Plays the Cockroach song when system boots
+
+[Service]
+
+Type=forking
+ExecStart=/usr/bin/cockroach_song.sh
+
+[Install]
+
+WantedBy=multi-user.target
+Alias=song.service 
